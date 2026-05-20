@@ -1,21 +1,19 @@
 /*
-Realice la suma de los 100 primeros números. Utilizar el ciclo for
+El programa entrega en pantalla una tabla de multiplicar a partir de un número ingresado.
 */
 #include <stdio.h>
-#include <stdlib.h>
-
 
 
 int main()//main() o main(void) 
 {
-	int i,multiplicacion,numero;
+	int i,resultado,numero;
 	
 	printf("Por favor, ingrese un numero: ");
-	scanf("%d",&numero);
-	for(i=1;i<=9;i++)
+	scanf("%d", &numero);
+	for(i = 1; i <= 10; i++)
 	{
-		multiplicacion=numero*i;
-		printf("\n%d X %d = %d",numero,i,multiplicacion);	
+		resultado = numero * i;
+		printf("\n%d X %d = %d",numero ,	i, resultado);	
 	}
 	
 	return 0;
